@@ -17,3 +17,4 @@ helm install --name nginx-ingress stable/nginx-ingress --set rbac.create=true
 ### On-prem
 
 When you deploy on-prem you will want to deploy as a daemon set.
+The nginx controller in this repo works for this case.
