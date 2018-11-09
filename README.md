@@ -5,6 +5,7 @@ Ingress controllers are the most popular deploy. They are a little different dep
 
 
 ### Azure
+helm install stable/nginx-ingress --namespace kube-system --set controller.replicaCount=2
 
 ### AWS
 
