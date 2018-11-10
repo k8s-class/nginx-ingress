@@ -12,8 +12,9 @@ helm install stable/nginx-ingress --namespace kube-system --set controller.repli
 ### GCP
 
 (Creates a LoadBalancer)
+```
 helm install --name nginx-ingress stable/nginx-ingress --set rbac.create=true
-
+```
 
 ### On-prem
 
