@@ -10,6 +10,6 @@ spec:
     email: devops@ghettolabs.io 
     # Name of a secret used to store the ACME account private key
     privateKeySecretRef:
-      name: helloworld-letsncrypt-prod
+      name: letsncrypt-prod
     # Enable HTTP01 validations
     http01: {}
