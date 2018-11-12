@@ -6,7 +6,7 @@ metadata:
 spec:
   secretName: helloworld-tls-prod
   issuerRef:
-    name: helloworld-letsncrypt-prod
+    name: letsncrypt-prod
   commonName: helloworld-v1.ghettolabs.io
   dnsNames:
   - helloworld-v1.ghettolabs.io
