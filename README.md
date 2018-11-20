@@ -37,3 +37,8 @@ The nginx controller in this repo works for this case.
           --set controller.service.type=NodePort \
           --set controller.hostNetwork=true
   ```
+
+
+
+### Started to build helm chart. Here is the working code
+
