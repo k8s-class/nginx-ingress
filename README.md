@@ -40,7 +40,8 @@ The nginx controller in this repo works for this case.
 
 
 
-### Started to build helm chart. Here is the working code
+### Here is how to test the ingress controller.
+
 ```[user@phatbox templates (⎈ |Epick8s:default)]$ kubectl get services
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)           AGE
 echoheaders-default        NodePort       10.0.232.68    <none>           80:30302/TCP      24m
