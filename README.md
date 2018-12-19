@@ -73,3 +73,17 @@ kubernetes                 ClusterIP      10.0.0.1       <none>           443/TC
 Hello World!
 
 ```
+
+# Create Internal Load Balancer with static IP
+
+```helm install stable/nginx-ingress     --namespace kube-system     -f internal-ingress.yaml     --set controller.replicaCount=2```
+
+```[user@phatbox internal_nginx_controller (⎈ |uscd-dev4-aks:default)]$ cat internal-ingress.yaml 
+controller:
+  service:
+    loadBalancerIP: 192.168.80.150 
+    annotations:
+      service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+```
+
+
