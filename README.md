@@ -86,4 +86,7 @@ controller:
       service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 ```
 
+### With SSL Passthrough enabled
 
+```helm install stable/nginx-ingress --namespace kube-system -f internal-ingress.yaml --set controller.replicaCount=2 --set controller.extraArgs.enable-ssl-passthrough=""
+```
