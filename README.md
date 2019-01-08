@@ -88,5 +88,6 @@ controller:
 
 ### With SSL Passthrough enabled
 
-```helm install stable/nginx-ingress --namespace kube-system -f internal-ingress.yaml --set controller.replicaCount=2 --set controller.extraArgs.enable-ssl-passthrough=""
+```
+helm install stable/nginx-ingress --namespace kube-system -f internal-ingress.yaml --set controller.replicaCount=2 --set controller.extraArgs.enable-ssl-passthrough=""
 ```
