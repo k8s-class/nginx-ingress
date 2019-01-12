@@ -14,9 +14,6 @@ helm install stable/nginx-ingress --namespace kube-system --set controller.repli
 ```
 
         helm install --name my-ingress-controller stable/nginx-ingress \
-          --set controller.kind=DaemonSet \
-          --set controller.service.type=NodePort \
-          --set controller.hostNetwork=true \
           --set rbac.create=true
 ```
 
