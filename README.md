@@ -89,3 +89,7 @@ controller:
 ```
 helm install stable/nginx-ingress --namespace kube-system -f internal-ingress.yaml --set controller.replicaCount=2 --set controller.extraArgs.enable-ssl-passthrough=""
 ```
+### External DNS
+```
+https://github.com/kubernetes-incubator/external-dns
+```
