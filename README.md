@@ -12,9 +12,7 @@ helm install stable/nginx-ingress --namespace kube-system --set controller.repli
 
 ### AWS
 ```
-
-        helm install --name my-ingress-controller stable/nginx-ingress \
-          --set rbac.create=true
+helm install --name my-ingress-controller stable/nginx-ingress --set controller.kind=DaemonSet --set controller.hostNetwork=true --set rbac.create=true
 ```
 
 ### GCP
