@@ -91,3 +91,9 @@ helm install stable/nginx-ingress --namespace kube-system -f internal-ingress.ya
 ```
 https://github.com/kubernetes-incubator/external-dns
 ```
+### Enable stats and metrics using helm chart
+```
+helm install --name nginx-ingress-release stable/nginx-ingress \
+  --set controller.stats.enabled=true \
+  --set controller.metrics.enabled=true
+ ```
